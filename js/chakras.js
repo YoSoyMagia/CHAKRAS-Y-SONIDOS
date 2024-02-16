@@ -17,7 +17,7 @@ export const chakras = [
     },
     {
         "nombre" : "Sacro | स्वाधिष्ठान",
-        "imagen" : "/assets/SACRO.webp",
+        "imagen" : "./assets/SACRO.webp",
         "audio" : "./audios/sacro.mpga",
         "video" : null,
         "color" : "#eba245",
