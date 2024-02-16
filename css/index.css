@@ -37,6 +37,10 @@ body {
     border: rgb(2, 112, 185) 3px solid;
 }
 
+.cRaiz {
+    background-color: #FD8A8A;
+}
+
 .contenedor__img {
     max-width: 150px;
     width: 90%;
