@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(152, 238, 204);
+    background-color: rgb(167,105,187);
 }
 
 .contenedor {
@@ -20,6 +20,11 @@ body {
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr;
     gap: 5px;
+    overflow-y: scroll;
+}
+
+.contenedor::-webkit-scrollbar {
+    width: 0;
 }
 
 .contenedor__cancion {
@@ -27,27 +32,41 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(121, 224, 238, 0.514);
-    border: rgb(121, 224, 238) 3px solid;
+    /* background-color: rgba(121, 224, 238, 0.514);
+    border: rgb(121, 224, 238) 3px solid; */
     border-radius: 25px;
+    position: relative;
+    margin-bottom: 3%;
+    overflow: hidden;
+    height: 450px;
 }
 
 .contenedor__cancion:hover {
-    background-color: rgb(121, 224, 238);
-    border: rgb(2, 112, 185) 3px solid;
-}
-
-.cRaiz {
-    background-color: #FD8A8A;
+    /* background-color: rgb(121, 224, 238); */
+    /* border: rgb(2, 112, 185) 3px solid; */
 }
 
 .contenedor__img {
-    max-width: 150px;
-    width: 90%;
+    width: 100%;
+    top: 13%;
 }
 
 .audio {
-    width: 90%;
+    width: 98%;
+    bottom: 1%;
+}
+
+.contenedor_h2 {
+    font-size: 2.5em;
+    top: 3%;
+    text-align: center;
+}
+
+@media (max-width: 1440px) {
+    .contenedor {
+        grid-template-columns: repeat(3,1fr);
+        
+    }
 }
 
 @media (max-width: 1000px) {
@@ -59,5 +78,9 @@ body {
 @media (max-width: 800px) {
     .contenedor {
         grid-template-columns: 1fr;
+    }
+
+    .contenedor_h2 {
+        font-size: 1.5em;
     }
 }

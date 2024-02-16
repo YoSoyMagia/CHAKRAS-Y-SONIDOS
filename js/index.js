@@ -1,0 +1,29 @@
+import { chakras } from "./chakras.js";
+
+const app = document.getElementById("app");
+
+chakras.forEach(chakra => {
+    console.log(chakra)
+    let template;
+    if(chakra.nombre === "logo") {
+        template = `
+        <div class="contenedor__cancion">
+            <img class="contenedor__img" src="${chakra.imagen}" alt="${chakra.nombre}">
+        </div>
+        `;
+    }
+    else {
+        template = `
+        <div class="contenedor__cancion">
+            <h2 class="contenedor_h2">${chakra.nombre}</h2>
+            <img class="contenedor__img" src="${chakra.imagen}" alt="${chakra.nombre}">
+            <audio class="audio" controls preload="metadata" src="${chakra.audio}"></audio>
+        </div>
+        `;
+    }
+
+    
+    app.insertAdjacentHTML("beforeend",template);
+    console.log(app.children[app.children.length - 1], " aq");
+    app.querySelectorAll(".contenedor__cancion")[app.children.length - 1].style.backgroundColor = chakra.color;
+});
