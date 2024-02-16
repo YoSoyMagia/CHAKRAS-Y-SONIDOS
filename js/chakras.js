@@ -27,7 +27,11 @@ export const chakras = [
         "nombre" : "Plexo solar | मणिपूर",
         "imagen" : "./assets/PLEXO SOLAR.webp",
         "audio" : "./audios/plexoSolar.mpga",
-        "video" : null,
+        "video" : `
+            <div class="contenedor__cancion" id="video">
+                <iframe src="https://www.youtube.com/embed/XU6UxAVBhwY?si=pN2vxiDFEWqLClgq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        `,
         "color" : "#fbec78",
         "borde" : "#736c09"
     },
@@ -43,7 +47,11 @@ export const chakras = [
         "nombre" : "Garganta | विशुद्ध",
         "imagen" : "./assets/GARGANTA.webp",
         "audio" : "./audios/garganta.mpga",
-        "video" : null,
+        "video" : `
+            <div class="contenedor__cancion" id="video">
+                <iframe src="https://www.youtube.com/embed/ZQ1n4mItE1o?si=lWR9AUHrrUqKPxRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        `,
         "color" : "#84dbfb",
         "borde" : "#40bff4"
     },
