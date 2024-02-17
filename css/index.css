@@ -33,18 +33,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: rgba(121, 224, 238, 0.514);
-    border: rgb(121, 224, 238) 3px solid; */
     border-radius: 25px;
     position: relative;
     margin-bottom: 3%;
     overflow: hidden;
     height: 450px;
-}
-
-.contenedor__cancion:hover {
-    /* background-color: rgb(121, 224, 238); */
-    /* border: rgb(2, 112, 185) 3px solid; */
 }
 
 .contenedor__img {
@@ -57,10 +50,17 @@ body {
     bottom: 1%;
 }
 
-.contenedor_h2 {
+.contenedor__h2 {
     font-size: 2.5em;
     top: 3%;
     text-align: center;
+}
+
+.contenedor__h3 {
+    position: absolute;
+    font-size: 2em;
+    bottom: 20%;
+    z-index: 1;
 }
 
 #video {
@@ -109,5 +109,9 @@ body {
     #video {
         width: 90%;
         height: 400px;
+    }
+
+    .contenedor__h3 {
+        bottom: 25%;
     }
 }

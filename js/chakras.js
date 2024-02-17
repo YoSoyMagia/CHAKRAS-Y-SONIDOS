@@ -5,7 +5,8 @@ export const chakras = [
         "audio" : null,
         "video" : null,
         "color" : "#FFFFFF",
-        "borde" : "#FFFFFF"
+        "borde" : "#FFFFFF",
+        "mantra" : null
     },
     {
         "nombre" : "Raíz | मूलाधार",
@@ -13,7 +14,8 @@ export const chakras = [
         "audio" : "./audios/raiz.mpga",
         "video" : null,
         "color" : "#fb5126",
-        "borde" : "#fb5126"
+        "borde" : "#fb5126",
+        "mantra" : "LAM"
     },
     {
         "nombre" : "Sacro | स्वाधिष्ठान",
@@ -21,7 +23,8 @@ export const chakras = [
         "audio" : "./audios/sacro.mpga",
         "video" : null,
         "color" : "#eba245",
-        "borde" : "#b36a0f"
+        "borde" : "#b36a0f",
+        "mantra" : "VAM"
     },
     {
         "nombre" : "Plexo solar | मणिपूर",
@@ -33,7 +36,8 @@ export const chakras = [
             </div>
         `,
         "color" : "#fbec78",
-        "borde" : "#736c09"
+        "borde" : "#736c09",
+        "mantra" : "RAM"
     },
     {
         "nombre" : "Corazón | अनाहत",
@@ -41,7 +45,8 @@ export const chakras = [
         "audio" : "./audios/corazon.mpga",
         "video" : null,
         "color" : "#9fe1bc",
-        "borde" : "#1c5d38"
+        "borde" : "#1c5d38",
+        "mantra" : "YAM"
     },
     {
         "nombre" : "Garganta | विशुद्ध",
@@ -53,7 +58,8 @@ export const chakras = [
             </div>
         `,
         "color" : "#84dbfb",
-        "borde" : "#40bff4"
+        "borde" : "#40bff4",
+        "mantra" : "HAM"
     },
     {
         "nombre" : "Tercer ojo | आज्ञा",
@@ -61,7 +67,8 @@ export const chakras = [
         "audio" : "./audios/tercerOjo.mp3",
         "video" : null,
         "color" : "#ada6d2",
-        "borde" : "#47406b"
+        "borde" : "#47406b",
+        "mantra" : "KSHAM"
     },
     {
         "nombre" : "Sahasrara | सहस्रार",
@@ -69,6 +76,7 @@ export const chakras = [
         "audio" : "./audios/corona.mpga",
         "video" : null,
         "color" : "#e19dd6",
-        "borde" : "#76316a"
+        "borde" : "#76316a",
+        "mantra" : "OM"
     }
 ]
