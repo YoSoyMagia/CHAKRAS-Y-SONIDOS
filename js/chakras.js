@@ -71,7 +71,7 @@ export const chakras = [
         "mantra" : "KSHAM"
     },
     {
-        "nombre" : "Sahasrara | सहस्रार",
+        "nombre" : "Corona | सहस्रार",
         "imagen" : "./assets/CORONA.webp",
         "audio" : "./audios/corona.mpga",
         "video" : null,
