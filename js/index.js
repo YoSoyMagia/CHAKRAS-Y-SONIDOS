@@ -3,7 +3,7 @@ import { chakras } from "./chakras.js";
 const app = document.getElementById("app");
 
 chakras.forEach(chakra => {
-    //console.log(chakra)
+    
     let template;
     if(chakra.nombre === "logo") {
         template = `
@@ -30,9 +30,9 @@ chakras.forEach(chakra => {
     cont_canc.style.backgroundColor = chakra.color;
 
     if(chakra.video != null) {
-        console.log(cont_canc.querySelector("img"));
+        
         cont_canc.querySelector("img").addEventListener("click", () => {
-            console.log(document.getElementById('video'));
+            
             if(document.getElementById('video') &&
                 document.getElementById('video').dataset.cancion !== chakra.nombre
             ) {
@@ -44,7 +44,7 @@ chakras.forEach(chakra => {
                 document.getElementById('video').remove();
             }
             else {
-                console.log(chakra.video);
+                
                 app.insertAdjacentHTML("beforeend",chakra.video);
                 document.getElementById('video').dataset.cancion = chakra.nombre;
             }
