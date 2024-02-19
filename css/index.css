@@ -40,9 +40,14 @@ body {
     height: 450px;
 }
 
+.contenedor__contImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contenedor__img {
     width: 100%;
-    top: 13%;
 }
 
 .audio {
@@ -50,16 +55,19 @@ body {
     bottom: 1%;
 }
 
-.contenedor__h2 {
-    font-size: 2.5em;
-    top: 3%;
+.contenedor__h2, .contenedor__h2a {
+    font-size: 1.3em;
     text-align: center;
+}
+
+.contenedor__h2a {
+    font-size: 2em;
 }
 
 .contenedor__h3 {
     position: absolute;
     font-size: 2em;
-    bottom: 20%;
+    bottom: 42%;
     z-index: 1;
 }
 
@@ -97,7 +105,7 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .contenedor {
         grid-template-columns: 1fr;
     }
@@ -109,9 +117,5 @@ body {
     #video {
         width: 90%;
         height: 400px;
-    }
-
-    .contenedor__h3 {
-        bottom: 25%;
     }
 }

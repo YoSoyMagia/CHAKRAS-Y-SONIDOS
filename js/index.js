@@ -15,9 +15,12 @@ chakras.forEach(chakra => {
     else {
         template = `
                 <div class="contenedor__cancion">
-                    <h2 class="contenedor_h2">${chakra.nombre}</h2>
-                    <img class="contenedor__img img_chakra" src="${chakra.imagen}" alt="${chakra.nombre}">
-                    <h3 class="contenedor__h3">${chakra.mantra}</h3>
+                    <h2 class="contenedor__h2a">${chakra.sanscrito}</h2>
+                    <h2 class="contenedor__h2">${chakra.nombre}</h2>
+                    <div class="contenedor__contImg">
+                        <img class="contenedor__img img_chakra" src="${chakra.imagen}" alt="${chakra.nombre}">
+                        <h3 class="contenedor__h3">${chakra.mantra}</h3>
+                    </div>
                     <audio class="audio" controls preload="metadata" src="${chakra.audio}"></audio>
                 </div>
                 `;

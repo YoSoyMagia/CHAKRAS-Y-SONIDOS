@@ -9,7 +9,8 @@ export const chakras = [
         "mantra" : null
     },
     {
-        "nombre" : "Raíz | मूलाधार",
+        "sanscrito" : "मूलाधार",
+        "nombre" : "Muladhara | Chakra raíz",
         "imagen" : "./assets/RAIZ.jpg",
         "audio" : "./audios/raiz.mpga",
         "video" : null,
@@ -18,7 +19,8 @@ export const chakras = [
         "mantra" : "LAM"
     },
     {
-        "nombre" : "Sacro | स्वाधिष्ठान",
+        "sanscrito" : "स्वाधिष्ठान",
+        "nombre" : "Svadhisthana | Chakra sacro",
         "imagen" : "./assets/SACRO.webp",
         "audio" : "./audios/sacro.mpga",
         "video" : null,
@@ -27,7 +29,8 @@ export const chakras = [
         "mantra" : "VAM"
     },
     {
-        "nombre" : "Plexo solar | मणिपूर",
+        "sanscrito" : "मणिपूर",
+        "nombre" : "Manipura | Chakra del plexo solar",
         "imagen" : "./assets/PLEXO SOLAR.webp",
         "audio" : "./audios/plexoSolar.mpga",
         "video" : `
@@ -40,7 +43,8 @@ export const chakras = [
         "mantra" : "RAM"
     },
     {
-        "nombre" : "Corazón | अनाहत",
+        "sanscrito" : "अनाहत",
+        "nombre" : "Anahata | Chakra del corazón",
         "imagen" : "./assets/CORAZON.webp",
         "audio" : "./audios/corazon.mpga",
         "video" : null,
@@ -49,7 +53,8 @@ export const chakras = [
         "mantra" : "YAM"
     },
     {
-        "nombre" : "Garganta | विशुद्ध",
+        "sanscrito" : "विशुद्ध",
+        "nombre" : "Vishuddha | Chakra de la garganta",
         "imagen" : "./assets/GARGANTA.webp",
         "audio" : "./audios/garganta.mpga",
         "video" : `
@@ -62,16 +67,18 @@ export const chakras = [
         "mantra" : "HAM"
     },
     {
-        "nombre" : "Tercer ojo | आज्ञा",
+        "sanscrito" : "आज्ञा",
+        "nombre" : "Ajna | Chakra del tercer ojo",
         "imagen" : "./assets/TERCER OJO.webp",
         "audio" : "./audios/tercerOjo.mp3",
         "video" : null,
         "color" : "#ada6d2",
         "borde" : "#47406b",
-        "mantra" : "KSHAM"
+        "mantra" : "AUM"
     },
     {
-        "nombre" : "Corona | सहस्रार",
+        "sanscrito" : "सहस्रार",
+        "nombre" : "Sahasrara | Chakra corona",
         "imagen" : "./assets/CORONA.webp",
         "audio" : "./audios/corona.mpga",
         "video" : null,
