@@ -12,7 +12,10 @@ export const chakras = [
         "sanscrito" : "मूलाधार",
         "nombre" : "Muladhara | Chakra raíz",
         "imagen" : "./assets/RAIZ.jpg",
-        "audio" : "./audios/raiz.mpga",
+        "audio" : [
+            "./audios/raiz.mpga"
+        ],
+        "nextAudio" : null,
         "video" : null,
         "color" : "#fb5126",
         "borde" : "#fb5126",
@@ -22,7 +25,10 @@ export const chakras = [
         "sanscrito" : "स्वाधिष्ठान",
         "nombre" : "Svadhisthana | Chakra sacro",
         "imagen" : "./assets/SACRO.webp",
-        "audio" : "./audios/sacro.mpga",
+        "audio" : [
+            "./audios/sacro.mpga",
+            "./audios/sacro2.mp3"
+        ],
         "video" : null,
         "color" : "#eba245",
         "borde" : "#b36a0f",
@@ -32,7 +38,10 @@ export const chakras = [
         "sanscrito" : "मणिपूर",
         "nombre" : "Manipura | Chakra del plexo solar",
         "imagen" : "./assets/PLEXO SOLAR.webp",
-        "audio" : "./audios/plexoSolar.mpga",
+        "audio" : [
+            "./audios/plexoSolar.mpga"
+        ],
+        "nextAudio" : null,
         "video" : `
             <div class="contenedor__cancion" id="video">
                 <iframe src="https://www.youtube.com/embed/XU6UxAVBhwY?si=pN2vxiDFEWqLClgq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -46,7 +55,10 @@ export const chakras = [
         "sanscrito" : "अनाहत",
         "nombre" : "Anahata | Chakra del corazón",
         "imagen" : "./assets/CORAZON.webp",
-        "audio" : "./audios/corazon.mpga",
+        "audio" : [
+            "./audios/corazon.mpga"
+        ],
+        "nextAudio" : null,
         "video" : null,
         "color" : "#9fe1bc",
         "borde" : "#1c5d38",
@@ -56,7 +68,10 @@ export const chakras = [
         "sanscrito" : "विशुद्ध",
         "nombre" : "Vishuddha | Chakra de la garganta",
         "imagen" : "./assets/GARGANTA.webp",
-        "audio" : "./audios/garganta.mpga",
+        "audio" : [
+            "./audios/garganta.mpga"
+        ],
+        "nextAudio" : null,
         "video" : `
             <div class="contenedor__cancion" id="video">
                 <iframe src="https://www.youtube.com/embed/ZQ1n4mItE1o?si=lWR9AUHrrUqKPxRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -70,7 +85,10 @@ export const chakras = [
         "sanscrito" : "आज्ञा",
         "nombre" : "Ajna | Chakra del tercer ojo",
         "imagen" : "./assets/TERCER OJO.webp",
-        "audio" : "./audios/tercerOjo.mp3",
+        "audio" : [
+            "./audios/tercerOjo.mp3"
+        ],
+        "nextAudio" : null,
         "video" : null,
         "color" : "#ada6d2",
         "borde" : "#47406b",
@@ -80,7 +98,10 @@ export const chakras = [
         "sanscrito" : "सहस्रार",
         "nombre" : "Sahasrara | Chakra corona",
         "imagen" : "./assets/CORONA.webp",
-        "audio" : "./audios/corona.mpga",
+        "audio" : [
+            "./audios/corona.mpga"
+        ],
+        "nextAudio" : null,
         "video" : null,
         "color" : "#e19dd6",
         "borde" : "#76316a",

@@ -12,6 +12,25 @@ chakras.forEach(chakra => {
                 </div>
                 `;
     }
+
+    else if(chakra.audio.length > 1) {
+        template = `
+                <div class="contenedor__cancion">
+                    <h2 class="contenedor__h2a">${chakra.sanscrito}</h2>
+                    <h2 class="contenedor__h2">${chakra.nombre}</h2>
+                    <div class="contenedor__contImg">
+                        <img class="contenedor__img img_chakra" src="${chakra.imagen}" alt="${chakra.nombre}">
+                        <h3 class="contenedor__h3">${chakra.mantra}</h3>
+                    </div>
+                    <div class="contenedor__panelcontrolAudio" id="${chakra.sanscrito}">
+                        <img src="./assets/icons/arrow-left-circle.svg" alt="" class="audioActionBtn">
+                        <audio class="audio" controls preload="metadata" data-pa="0" src="${chakra.audio[0]}"></audio>
+                        <img src="./assets/icons/arrow-right-circle.svg" alt="" class="audioActionBtn">
+                    </div>
+                </div>
+                `;
+    }
+
     else {
         template = `
                 <div class="contenedor__cancion">
@@ -26,11 +45,35 @@ chakras.forEach(chakra => {
                 `;
     }
 
+
+    // Inyecta el template
     
     app.insertAdjacentHTML("beforeend",template);
 
+    // Configuración pasar audio
+
+    const panel = document.getElementById(chakra.sanscrito);
+    
+    if(panel) {
+        panel.querySelectorAll(".audioActionBtn").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                let pos = parseInt(e.target.parentElement.querySelector("audio").dataset.pa) + 1;
+    
+                pos = pos >= chakra.audio.length ? 0 : pos;
+    
+                e.target.parentElement.querySelector("audio").src = chakra.audio[pos];
+                e.target.parentElement.querySelector("audio").dataset.pa = pos;
+            });
+        })
+    }
+    else {}
+
+    // Configuración agregar colores de las cards
+
     let cont_canc = app.querySelectorAll(".contenedor__cancion")[app.children.length - 1];
     cont_canc.style.backgroundColor = chakra.color;
+
+    // Configuración visualización de los videos
 
     if(chakra.video != null) {
         
