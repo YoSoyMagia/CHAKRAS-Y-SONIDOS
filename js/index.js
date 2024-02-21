@@ -23,9 +23,9 @@ chakras.forEach(chakra => {
                         <h3 class="contenedor__h3">${chakra.mantra}</h3>
                     </div>
                     <div class="contenedor__panelcontrolAudio" id="${chakra.sanscrito}">
-                        <img src="./assets/icons/arrow-left-circle.svg" alt="" class="audioActionBtn">
+                        <img data-btn="previous" src="./assets/icons/arrow-left-circle.svg" alt="" class="audioActionBtn previous">
                         <audio class="audio" controls preload="metadata" data-pa="0" src="${chakra.audio[0]}"></audio>
-                        <img src="./assets/icons/arrow-right-circle.svg" alt="" class="audioActionBtn">
+                        <img data-btn="next" src="./assets/icons/arrow-right-circle.svg" alt="" class="audioActionBtn">
                     </div>
                 </div>
                 `;
@@ -57,9 +57,17 @@ chakras.forEach(chakra => {
     if(panel) {
         panel.querySelectorAll(".audioActionBtn").forEach(btn => {
             btn.addEventListener("click", (e) => {
-                let pos = parseInt(e.target.parentElement.querySelector("audio").dataset.pa) + 1;
-    
-                pos = pos >= chakra.audio.length ? 0 : pos;
+                let pos = null;
+
+                if(e.target.dataset.btn === "next") {
+                    pos = parseInt(e.target.parentElement.querySelector("audio").dataset.pa) + 1;    
+                    pos = pos >= chakra.audio.length ? 0 : pos;
+                }
+                else if(e.target.dataset.btn === "previous") {
+                    pos = parseInt(e.target.parentElement.querySelector("audio").dataset.pa) - 1;    
+                    pos = pos < 0 ? chakra.audio.length - 1 : pos;
+                }
+                
     
                 e.target.parentElement.querySelector("audio").src = chakra.audio[pos];
                 e.target.parentElement.querySelector("audio").dataset.pa = pos;
